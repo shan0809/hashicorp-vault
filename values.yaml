@@ -441,7 +441,7 @@ server:
     timeoutSeconds: 3
   # Used to enable a livenessProbe for the pods
   livenessProbe:
-    enabled: true
+    enabled: false
     path: "/v1/sys/health?standbyok=true"
     # When a probe fails, Kubernetes will try failureThreshold times before giving up
     failureThreshold: 2
